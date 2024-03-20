@@ -1,6 +1,6 @@
 # EMNIST Digit Classifier
 
-This project is an exploration into machine learning with a focus on classifying handwritten digits from the Extended Modified National Institute of Standards and Technology (EMNIST) dataset. Utilizing the RandomForestClassifier algorithm, this Python-based project demonstrates the process of loading and preparing data, selecting, training, and fine-tuning a model, and finally evaluating its performance.
+This project is an exploration into machine learning with a focus on classifying handwritten digits from the Extended Modified National Institute of Standards and Technology (EMNIST) dataset. Utilizing both the RandomForestClassifier algorithm and a Neural Network model, this Python-based project demonstrates the process of loading and preparing data, selecting, training, and finally evaluating their performance.
 
 ## Getting Started
 
@@ -24,31 +24,38 @@ cd <project_name>
 
 Then, install the required Python packages:
 ```bash
-pip install pandas numpy scikit-learn
+pip install pandas numpy scikit-learn matplotlib tensorflow
 ```
 
-Running the Project
-Execute the following command to run the project:
+#### Running the Project
+To run the RandomForest model, execute the following command:
+
 ```bash
-python digit_classifier.py
+python RandomForest_Model.py
+```
+
+To run the Neural Network model, execute the following command:
+```bash
+python NeuralNetwork_Model.py
 ```
 
 This script will:
 
 * Load and prepare the EMNIST dataset.
-* Train a RandomForestClassifier model.
-* Fine-tune the model using GridSearchCV.
+* Train the specified model (RandomForestClassifier or Neural Network).
 * Evaluate the model's accuracy on the test dataset.
 
 
 # Project Structure
 * emnist-digits-train.csv: Training data file.
 * emnist-digits-test.csv: Test data file.
-* digit_classifier.py: Main Python script for training and evaluating the model.
+* RandomForest_Model: Main Python script for training and evaluating the **random forest model**
+* NeuralNetwork_Model: Main Python script for training and evaluating the **neural network model**
 
 # Built With
 
 * Pandas - For data manipulation and analysis.
 * NumPy - For handling large, multi-dimensional arrays and matrices.
 * Scikit-learn - For machine learning.
-
+* Matplotlib - For creating static, interactive, and animated visualizations in Python.
+* TensorFlow and Keras - For building and training the neural network model.
