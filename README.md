@@ -45,6 +45,14 @@ This script will:
 * Train the specified model (RandomForestClassifier or Neural Network).
 * Evaluate the model's accuracy on the test dataset.
 
+## Data Download
+
+The datasets for this project can be downloaded from the following Google Drive links:
+
+- Train set: [Download Train Set](https://drive.google.com/file/d/11sxm4A06o9qsFqBG_03_zWQM0sKW6STA/view)
+- Test set: [Download Test Set](https://drive.google.com/file/d/1HbRM6M6IH7vBmlAQMv5P1F8bXfypRMKP/view?usp=share_link)
+
+Please download the datasets and place them in the appropriate directory before running the project scripts.
 
 # Project Structure
 * emnist-digits-train.csv: Training data file.
