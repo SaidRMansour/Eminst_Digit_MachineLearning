@@ -4,6 +4,21 @@
 
 The evaluation with `max_depth: 40` and `n_estimators: 500` yielded an accuracy of 98.25%, with the process completed in 1.5 minutes.
 
+### Fine-Tuning (GridSearchCV)
+
+GRIDSEARCHCV Results:
+
+Best parameters found: {'max_depth': 70, 'n_estimators': 1000}
+Best accuracy achieved: 98.08%
+
+RandomForestClassifier configuration:
+- max_depth=70
+- n_estimators=1000
+- random_state=42
+- verbose=2
+
+Model accuracy: 98.29%
+
 ## Neural Network Model Results
 
 ### Training Process
