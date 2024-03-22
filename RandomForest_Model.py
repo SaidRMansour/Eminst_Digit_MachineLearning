@@ -50,9 +50,11 @@ rfc = RandomForestClassifier(max_depth=40, n_estimators=500, n_jobs=-1, random_s
 
 rfc.fit(X_train, y_train)
 
+
 """
-    Fine-tuning (not used) - take too much time
+    Fine-tuning - Gridsearchcv
 """
+
 # Sætter parameter som bruges til fine-tuning
 #params = {'max_depth': [40, 70],'n_estimators': [600, 1000]}
 
@@ -81,4 +83,16 @@ y_pred = rfc.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Nøjagtighed af modellen: {accuracy}")
 
-# Evalueringen af max_depth: 40, n-estimators: 500 --> Accur: 0.9825 -> elapsed: 1.5 min finished
+# Evalueringen af max_depth: 40, n-estimators: 500 --> Accur: 0.9825 -> elapsed: 1.5 min finished -> Random forest (without fine-tuning)
+
+"""
+GRIDSEARCHCV Result:
+
+Bedste parametre fundet: {'max_depth': 70, 'n_estimators': 1000}
+Bedste nøjagtighed opnået: 0.9807957522385697
+RandomForestClassifier(max_depth=70, n_estimators=1000, random_state=42,
+                       verbose=2)
+
+Nøjagtighed af modellen: 0.9828745718642966
+
+"""
