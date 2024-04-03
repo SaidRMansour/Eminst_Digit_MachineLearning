@@ -46,11 +46,9 @@ Predictions on a small sample from the test dataset matched the true labels exac
 - **Predictions:** [9 7 9]
 
 ## Comparison and Conclusion
-[Coming soon]
-<!-- 
+
 Both models demonstrated high accuracy and effective classification of handwritten digits from the EMNIST dataset. The Random Forest model achieved an impressive accuracy of 98.25% in just 1.5 minutes, making it a robust and time-efficient choice for this classification task.
 
 The Neural Network model, on the other hand, reached a slightly higher accuracy of 99.12% on the test dataset, showing exceptional generalization capabilities and precision. Although it requires a longer training time over 50 epochs, the investment in time is justified by its performance and accuracy.
 
 Given the results, the preference between the two models depends on the specific requirements of the task. For tasks where time efficiency is critical, the Random Forest model is preferable due to its shorter training time. However, for applications where the highest possible accuracy is paramount, the Neural Network model, with its superior generalization and precision, would be the preferred choice.
--->
